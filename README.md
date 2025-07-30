@@ -16,6 +16,36 @@ This application allows users to create a list of countries they'd like to visit
 3. Update the `.env` file with your API URL (e.g., `REACT_APP_API_URL=http://localhost:3001`).
 4. Run `npm start` to start the React development server.
 
+### Docker Setup
+1. Prerequisites
+    -   Docker
+    -   Docker Compose
+
+2. Copy environment template
+```bash
+cp .env.example .env
+```
+
+3. To build the images and run the app
+```bash
+docker-compose up --build
+```
+
+5. Access the app on a browser @ http://localhost:8082
+
+6. To stop the containers run
+```bash
+docker-compose down
+```
+
+### Docker Hub Images
+
+***Frontend:***
+https://hub.docker.com/repository/docker/mikenrowland/dream-vacation-app-frontend/general
+
+***Backend:***
+https://hub.docker.com/repository/docker/mikenrowland/dream-vacation-app-backend/general
+
 ## Features
 - **Add Countries**: Users can add countries to their dream vacation list.
 - **View Country Details**: Displays capital, population, and region information for each country.
