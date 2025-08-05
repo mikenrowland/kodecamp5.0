@@ -22,7 +22,7 @@ app.get('/api/destinations', async (req, res) => {
     res.json(result.rows);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error!' });
   }
 });
 
@@ -39,7 +39,7 @@ app.post('/api/destinations', async (req, res) => {
     res.status(201).json(result.rows[0]);
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error!' });
   }
 });
 
@@ -50,7 +50,7 @@ app.delete('/api/destinations/:id', async (req, res) => {
     res.status(204).send();
   } catch (err) {
     console.error(err);
-    res.status(500).json({ error: 'Internal server error' });
+    res.status(500).json({ error: 'Internal server error!' });
   }
 });
 
