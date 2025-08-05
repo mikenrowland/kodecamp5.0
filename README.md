@@ -72,3 +72,10 @@ https://hub.docker.com/repository/docker/mikenrowland/dream-vacation-app-backend
 - **Environment Management**: Separate configurations for different environments (development, staging, production) using environment variables.
 - **Security**: Sensitive information is managed using environment variables and Kubernetes Secrets.
 - **Documentation**: The project is well-documented to facilitate onboarding and maintenance.
+
+## Continuous Integration and Continuous Deployment
+
+Using Github actions we automate the process of seamlessly integrating new changes we make during the development lifecycle. 
+We setup up our workflows in the different folders for the UI and Server; this ensures that the pipelines are triggered only
+when changes are made in these directories. The pipelines will be triggered with each push or pull request action.
+Also with the images pushed to Dockerhub, we always have a working version of the app ready to be deployed.
